@@ -33,7 +33,7 @@ public class MainClass {
         System.out.println("뭘까유");
         //컴퓨터가 10개의 구슬 중 랜덤으로 문제를 냄.
         Random random = new Random();
-        int rNum = random.nextInt(10);
+        int rNum = random.nextInt(10)+1;
         System.out.println("컴퓨터가 낸 문제(구슬 개수):"+rNum);
         String dab = "짝";
         if (rNum % 2 == 1) {
@@ -46,8 +46,10 @@ public class MainClass {
         //답을 입력 후 홀인지 짝인지 맞으면 맞다, 틀리면 틀렸다.
         String uDab = sc.next(); //문자열 입력받기
 
+        userGu = userGu - bet;        
+        
         //내가 가진 구슬 개수가 0이면 빵.
-        userGu = userGu - bet;        //내가 가진 구슬 개수가 20이되면 컴퓨터가 빵.
+        //내가 가진 구슬 개수가 20이되면 컴퓨터가 빵.
 
     }
 }
